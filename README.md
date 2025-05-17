@@ -6,11 +6,44 @@ An [espanso](https://espanso.org/) package for generating
 - policy filter syntax
 - CLI commands
 
-for Palo Alto Networks Next Generation Firewalls and Panorama.
+for [Palo Alto Networks](https://en.wikipedia.org/wiki/Palo_Alto_Networks) Next Generation Firewalls and Panorama.
 
 Espanso is a text expander.
 
-The goal is to save time for daily troubleshooting and admin tasks. Triggers should also work, if you do them in a remote session, because it's just like you'd type the characters yourself.
+The idea is to save time on daily troubleshooting and administrative tasks. Triggers should also work when used in a remote session, as it's just like typing the characters yourself.
+
+## Demo
+
+![](./assets/espanso-pan-demo.gif)
+
+## How to install espanso and this package
+
+Follow the espanso docs instructions for [Linux](https://espanso.org/docs/install/linux/), [macOS](https://espanso.org/docs/install/mac/) or [Windows](https://espanso.org/docs/install/win/).
+
+If you use homebrew it's just:
+```bash
+brew install espanso
+```
+
+Start espanso (if it isn't running after already) 
+
+### pan-snippets (this package)
+
+```bash
+espanso install pan-snippets
+```
+
+That's it. Test if it works by typing one of the triggers like `:pallow` 
+
+## How to update
+
+If a new version of this package is released you can update to the new version with
+
+```bash
+espanso package update pan-snippets
+```
+
+## Trigger Syntax 
 
 All triggers start with `:p` followed by a keyword. For this README file the following convention is used:
 

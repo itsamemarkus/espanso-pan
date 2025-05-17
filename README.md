@@ -16,6 +16,10 @@ The idea is to save time on daily troubleshooting and administrative tasks. Trig
 
 ![](./assets/espanso-pan-demo.gif)
 
+## Triggers
+
+All available triggers can be found in the [package.yml](https://github.com/itsamemarkus/espanso-pan/blob/main/pan-snippets/0.1.0/package.yml) file.
+
 ## How to install espanso and this package
 
 Follow the espanso docs instructions for [Linux](https://espanso.org/docs/install/linux/), [macOS](https://espanso.org/docs/install/mac/) or [Windows](https://espanso.org/docs/install/win/).

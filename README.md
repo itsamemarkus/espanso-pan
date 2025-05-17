@@ -28,7 +28,7 @@ Syntax: `:pleq<time>` and `:pgeq<time>`
 
 Example: `:pleq1842` will be replaced by `( receive_time leq '2025/05/13 18:42:00' )`
 
-![](/assets/pgeq1842-pleq1852.gif)
+![](./assets/pgeq1842-pleq1852.gif)
 
 ### multiple choice insert current clipboard
 
@@ -36,7 +36,7 @@ Syntax: `:pclip`
 
 Example: `:plcip` offers a choice, and then it uses your clipboard content to build the filter syntax. Might help, if you have to manually copy from a ticketing system or similar sources.
 
-![](/assets/pclip.gif)
+![](../assets/pclip.gif)
 
 ### source and destination actions
 
@@ -44,14 +44,14 @@ Syntax: `:psrcip` or `:pdstip` or `:psrczone` or ...
 
 Example: `psrcip` will be replaced by `( addr.src in '' )` with the cursor position in quotes.
 
-![](/assets/psrcip-pdstip.gif)
+![](./assets/psrcip-pdstip.gif)
 
 ### filter for specific traffic
 
 Syntax: `:pallow`, `:pdeny`, `:paction`, `:p0b`
 
 Example: `:pallow` expands to ( action eq 'allow' )
-![](/assets/pallow-etc.gif)
+![](./assets/pallow-etc.gif)
 
 ## Examples: Filter Policies
 
@@ -59,7 +59,7 @@ Syntax: `:pdisabled`, `:pnolog`, `:pname`
 
 Example: `:pnolog` expands to `(log-end eq 'no')` to show policies with no logging enabled
 
-![](/assets/pnolog-etc.gif)
+![](./assets/pnolog-etc.gif)
 
 ## Examples: CLI commands
 
@@ -76,7 +76,7 @@ debug dataplane packet-diag set capture stage drop file 2025-05-14_00-24_dr
 
 where the filename contains the current date and time.
 
-![](/assets/pcapfiles.gif)
+![](./assets/pcapfiles.gif)
 
 ### Set packet capture filter with CIDR source and/or destination range
 
@@ -86,7 +86,7 @@ where the filename contains the current date and time.
 debug dataplane packet-diag set filter match source 10.13.37.42 source-netmask 24 destination 9.9.9.9 destination-netmask 32
 ```
 
-![](/assets/pcapfilter.gif)
+![](./assets/pcapfilter.gif)
 
 ### capture helpers
 
@@ -104,7 +104,7 @@ debug dataplane packet-diag set filter match source 10.13.37.42 source-netmask 2
 
 `:ptsf` shows a form to enter scp/ssh details
 
-![](/assets/ptsf.gif)
+![](./assets/ptsf.gif)
 
 and expands to the command that exports the tech support file via scp.
 
